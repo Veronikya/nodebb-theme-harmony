@@ -128,10 +128,6 @@
 				[component="post/actions"] {
 					opacity: 0;
 					transition: $transition-fade;
-
-					&:has([aria-expanded="true"]) {
-						opacity: 1;
-					}
 				}
 
 				&:hover {

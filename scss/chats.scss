@@ -4,19 +4,6 @@
 	max-width: 100%;
 }
 
-.stacked-avatars {
-	width: 32px;
-	height: 32px;
-	span:first-child {
-		top: 0;
-		left: 8px;
-	}
-	span:last-child {
-		left: 0;
-		top: 8px;
-	}
-}
-
 body.page-user-chats {
 	overflow: hidden;
 	[data-widget-area="footer"] {
@@ -35,7 +22,7 @@ body.page-user-chats {
 }
 
 [component="chat/recent"] {
-	.active .chat-room-btn {
+	.active {
 		background-color: $btn-ghost-hover-color;
 	}
 }

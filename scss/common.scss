@@ -1,34 +1,23 @@
 
 body {
 	overflow-y: scroll;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
 }
 
 // fixes chrome font boosting :/ https://stackoverflow.com/questions/13430897/how-to-override-font-boosting-in-mobile-chrome
 body * {
-	max-height:1000000px;
-	text-size-adjust: none;
-	-webkit-text-size-adjust: none;
-	-moz-text-size-adjust: none;
-}
-
-hr {
-    border-top-color: $border-color;
-	opacity: 1;
+    max-height:1000000px;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
 }
 
 .ff-base {
-	font-family: $font-family-base !important;
-}
-.ff-sans {
-	font-family: $font-family-sans-serif !important;
+	font-family: $font-family-base;
 }
 .ff-secondary {
 	font-family: $font-family-secondary;
 }
-.tracking-tight { letter-spacing: -0.02em; }
+.tracking-tight { letter-spacing: -0.025em; }
 
 .caret {
 	&::after {
@@ -41,11 +30,6 @@ hr {
 
 .placeholder-wave {
 	opacity: 0.5;
-}
-
-.bg-card-cap {
-	--bs-bg-opacity: 1;
-	background-color: $card-cap-bg!important;
 }
 
 blockquote {
